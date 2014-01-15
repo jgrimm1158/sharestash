@@ -1,4 +1,6 @@
 Sharestash::Application.routes.draw do
+  resources :stashes
+
   devise_for :users
   root "pages#home"
   get "about" => "pages#about"
